@@ -3,6 +3,10 @@ package com.stewart.server.service;
 import com.stewart.server.common.api.R;
 import com.stewart.server.pojo.Admin;
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.stewart.server.pojo.Menu;
+
+import javax.servlet.http.HttpServletRequest;
+import java.util.List;
 
 /**
  * <p>
@@ -20,7 +24,7 @@ public interface IAdminService extends IService<Admin> {
      * @param password
      * @return
      */
-    R login(String username, String password);
+    R login(String username, String password, String code, HttpServletRequest request);
 
     /**
      * 根据用户名获取用户

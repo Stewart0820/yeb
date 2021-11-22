@@ -43,3 +43,15 @@ Iyeb-server/src/main/java/com/xxxx/server/mapper/EmployeeRemoveMapper.java,5\9\
 Tyeb-server/src/main/java/com/xxxx/server/config/security/component/CustomFilter.java,4\3\43f2dc9ea1f865fab0771b627799d3d1643dd9ab
 ê
 `yeb-server/src/main/java/com/xxxx/server/config/security/component/CustomUrlDecisionManager.java,8\b\8bc4bfaa9d87e922ed62931062fe7c0167d49ef2
+r
+Byeb-server/src/main/java/com/xxxx/server/config/CaptchaConfig.java,1\f\1f7cb38be80780c2098178a7b1474774fc616569
+z
+Jyeb-server/src/main/java/com/xxxx/server/controller/CaptchaController.java,c\8\c8acb5a2ccf0c2be584c4ed7264ca8e58ff526c2
+w
+Gyeb-server/src/main/java/com/xxxx/server/controller/MenuController.java,e\2\e2fd75db989a593ef81f6ce5aced56a74d955792
+r
+Byeb-server/src/main/java/com/xxxx/server/service/IMenuService.java,e\9\e9cb2164db9e4ec27920a748c5bb1ab58acc29c6
+7
+pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
+z
+Jyeb-server/src/main/java/com/xxxx/server/service/impl/MenuServiceImpl.java,4\8\48fae861930657fea825996c9a726b38cddae926

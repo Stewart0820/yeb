@@ -7,6 +7,7 @@ import com.stewart.server.service.IAdminService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
@@ -25,8 +26,15 @@ public class LoginController {
 
     @ApiOperation(value = "登录之后返回token")
     @PostMapping("/login")
-    public R login(@RequestBody AdminLoginParam adminLoginParam){
-        return adminService.login(adminLoginParam.getUsername(),adminLoginParam.getPassword());
+    public R login(@RequestBody AdminLoginParam adminLoginParam,HttpServletRequest request){
+        if (StringUtils.isEmpty(adminLoginParam.getUsername())){
+            return R.error("用户名为空,请重新输入");
+        }
+        if (StringUtils.isEmpty(adminLoginParam.getPassword())){
+            return R.error("传入的密码为空，请重新输入");
+        }
+
+        return adminService.login(adminLoginParam.getUsername(),adminLoginParam.getPassword(),adminLoginParam.getCode(),request);
     }
 
 

@@ -5,6 +5,7 @@ import com.stewart.server.common.api.R;
 import com.stewart.server.common.utils.JwtTokenUtil;
 import com.stewart.server.pojo.Admin;
 import com.stewart.server.mapper.AdminMapper;
+import com.stewart.server.pojo.Menu;
 import com.stewart.server.service.IAdminService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,8 +17,11 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
+import org.springframework.util.StringUtils;
 
+import javax.servlet.http.HttpServletRequest;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -46,10 +50,16 @@ public class AdminServiceImpl extends ServiceImpl<AdminMapper, Admin> implements
     @Value("${jwt.tokenHead}")
     private String tokenHead;
 
+
+
     @Override
-    public R login(String username, String password) {
+    public R login(String username, String password, String code, HttpServletRequest request) {
+        String captcha = (String) request.getSession().getAttribute("captcha");
+        if(StringUtils.isEmpty(code)||!captcha.equalsIgnoreCase(code)){
+            return R.error("验证码输入错误,请重新输入");
+        }
 
-
+        //判断账号密码是否正确
         UserDetails userDetails = userDetailsService.loadUserByUsername(username);
         if(userDetails==null||!passwordEncoder.matches(password,userDetails.getPassword())){
             return R.error("用户名或密码不正确");
@@ -84,4 +94,5 @@ public class AdminServiceImpl extends ServiceImpl<AdminMapper, Admin> implements
     public Admin getAdminByUsername(String username) {
         return adminMapper.selectOne(new QueryWrapper<Admin>().eq("username", username));
     }
+
 }

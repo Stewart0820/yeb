@@ -25,10 +25,6 @@ x
 Hyeb-server/src/test/java/com/stewart/server/generator/CodeGenerator.java,d\d\dde7a45b48f6d826fda602e550cca6dc9c6b5946
 ~
 Nyeb-server/src/main/java/com/stewart/server/service/impl/AdminServiceImpl.java,c\b\cb5fe1e4bf7656c6889a8a0d3d84296775ebdaa0
-u
-Eyeb-server/src/main/java/com/stewart/server/dto/AdminUserDetails.java,1\8\18818f493d2372cff3f3c9e1eae789b4fe048c7e
-
-Oyeb-server/src/main/java/com/stewart/server/config/security/Swagger2Config.java,2\4\24e8387cdabf8933e11949e312c505f37e07b8a8
 z
 Jyeb-server/src/main/java/com/stewart/server/common/utils/JwtTokenUtil.java,e\4\e4b944426cbf8918e7869774cebae3590c4d48fe
 m
@@ -39,3 +35,7 @@ m
 ^yeb-server/src/main/java/com/stewart/server/config/component/JwtAuthenticationTokenFilter.java,f\3\f3b388ea3ed9b8849a86b0a636fb088ff66a2406
 Œ
 \yeb-server/src/main/java/com/stewart/server/config/component/RestfulAccessDeniedHandler.java,1\8\189f37a37a16cd4665b8b5e245105906f59102e2
+„
+Tyeb-server/src/main/java/com/stewart/server/controller/EmployeeRemoveController.java,a\1\a1d7edacff86b95740e78f8926ce6dc1a2f6c0f3
+v
+Fyeb-server/src/main/java/com/stewart/server/config/Swagger2Config.java,2\4\24945e14a500839e387f9389f44ea960ca088342
