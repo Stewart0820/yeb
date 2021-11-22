@@ -22,67 +22,108 @@
   </properties>
 
   <dependencies>
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>4.11</version>
-      <scope>test</scope>
-    </dependency>
+    <!--web 依赖-->
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-web</artifactId>
     </dependency>
-    <!--Mysql数据库驱动-->
-    <dependency>
-      <groupId>mysql</groupId>
-      <artifactId>mysql-connector-java</artifactId>
-      <version>8.0.15</version>
-    </dependency>
-    <!--lombok依赖-->
+    <!--lombok 依赖-->
     <dependency>
       <groupId>org.projectlombok</groupId>
       <artifactId>lombok</artifactId>
       <optional>true</optional>
     </dependency>
+    <!--mysql 依赖-->
+    <dependency>
+      <groupId>mysql</groupId>
+      <artifactId>mysql-connector-java</artifactId>
+      <scope>8.0.15</scope>
+    </dependency>
+    <!--mybatis-plus 依赖-->
     <dependency>
       <groupId>com.baomidou</groupId>
       <artifactId>mybatis-plus-boot-starter</artifactId>
       <version>3.3.1.tmp</version>
     </dependency>
-
-    <!--Swagger-UI API文档生产工具-->
-    <dependency>
-      <groupId>io.springfox</groupId>
-      <artifactId>springfox-swagger2</artifactId>
-      <version>2.7.0</version>
-    </dependency>
-    <dependency>
-      <groupId>com.github.xiaoymin</groupId>
-      <artifactId>swagger-bootstrap-ui</artifactId>
-      <version>1.9.6</version>
-    </dependency>
-    <!--代码生成器-->
+    <!--mybatis-plus 代码生成器依赖-->
     <dependency>
       <groupId>com.baomidou</groupId>
       <artifactId>mybatis-plus-generator</artifactId>
       <version>3.3.1.tmp</version>
     </dependency>
-    <!--freemarker模板引擎-->
+    <!--freemarker 依赖-->
     <dependency>
       <groupId>org.freemarker</groupId>
       <artifactId>freemarker</artifactId>
     </dependency>
+    <!--    &lt;!&ndash; swagger2 依赖 &ndash;&gt;-->
+    <dependency>
+      <groupId>io.springfox</groupId>
+      <artifactId>springfox-swagger2</artifactId>
+      <version>2.9.2</version>
+    </dependency>
 
+    <!-- Swagger第三方ui依赖 -->
+    <dependency>
+      <groupId>com.github.xiaoymin</groupId>
+      <artifactId>swagger-bootstrap-ui</artifactId>
+      <version>1.9.3</version>
+    </dependency>
+    <!--Hutool Java工具包-->
+    <dependency>
+      <groupId>cn.hutool</groupId>
+      <artifactId>hutool-all</artifactId>
+      <version>4.5.7</version>
+    </dependency>
+    <!--security 依赖-->
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-security</artifactId>
     </dependency>
-    <!--JWT(Json Web Token)登录支持-->
+    <!--JWT 依赖-->
     <dependency>
       <groupId>io.jsonwebtoken</groupId>
       <artifactId>jjwt</artifactId>
       <version>0.9.0</version>
     </dependency>
+    <!-- google kaptcha依赖 -->
+<!--    <dependency>-->
+<!--      <groupId>com.github.axet</groupId>-->
+<!--      <artifactId>kaptcha</artifactId>-->
+<!--      <version>0.0.9</version>-->
+<!--    </dependency>-->
+<!--    &lt;!&ndash; spring data redis 依赖 &ndash;&gt;-->
+<!--    <dependency>-->
+<!--      <groupId>org.springframework.boot</groupId>-->
+<!--      <artifactId>spring-boot-starter-data-redis</artifactId>-->
+<!--    </dependency>-->
+<!--    &lt;!&ndash; commons-pool2 对象池依赖 &ndash;&gt;-->
+<!--    <dependency>-->
+<!--      <groupId>org.apache.commons</groupId>-->
+<!--      <artifactId>commons-pool2</artifactId>-->
+<!--    </dependency>-->
+<!--    &lt;!&ndash;easy poi依赖&ndash;&gt;-->
+<!--    <dependency>-->
+<!--      <groupId>cn.afterturn</groupId>-->
+<!--      <artifactId>easypoi-spring-boot-starter</artifactId>-->
+<!--      <version>4.1.3</version>-->
+<!--    </dependency>-->
+<!--    &lt;!&ndash;rabbitmq 依赖&ndash;&gt;-->
+<!--    <dependency>-->
+<!--      <groupId>org.springframework.boot</groupId>-->
+<!--      <artifactId>spring-boot-starter-amqp</artifactId>-->
+<!--    </dependency>-->
+<!--    &lt;!&ndash;websocket 依赖&ndash;&gt;-->
+<!--    <dependency>-->
+<!--      <groupId>org.springframework.boot</groupId>-->
+<!--      <artifactId>spring-boot-starter-websocket</artifactId>-->
+<!--    </dependency>-->
+<!--    &lt;!&ndash;FastDFS依赖&ndash;&gt;-->
+<!--    <dependency>-->
+<!--      <groupId>org.csource</groupId>-->
+<!--      <artifactId>fastdfs-client-java</artifactId>-->
+<!--      <version>1.29-SNAPSHOT</version>-->
+<!--    </dependency>-->
   </dependencies>
 
 

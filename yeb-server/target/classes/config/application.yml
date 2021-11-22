@@ -1,21 +1,10 @@
 server:
-  port: 8081
+  port: 8080
 spring:
   datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://47.106.220.247:3306/yeb?useUnicode=true&characterEncoding=utf8
+    url: jdbc:mysql://localhost:3306/yeb?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
     username: root
     password: 123456
-    hikari:
-      pool-name: DateHikariCP
-      # 最小空闲连接数
-      minimum-idle: 5
-      idle-timeout: 180000
-      maximum-pool-size: 10
-      auto-commit: true
-      max-lifetime: 180000
-      connection-timeout: 30000
-      connection-test-query: SELECT 1
 
 mybatis-plus:
   mapper-locations: classpath*:/mapper/*Mapper.xml
@@ -31,7 +20,7 @@ logging:
 
 jwt:
   tokenHeader: Authorization
-  secriet: yeb-secret
+  secret: yeb-secret
   # jwt的超时时间
   expiration: 604800
   tokenHead: Bearer
