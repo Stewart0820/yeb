@@ -3,9 +3,9 @@
 java:S1128"{Remove this unused import 'org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity'.(Ô¦ø8÷¦„¬Ô/
 {
 java:S3305)"YInject this field value directly into "userDetailsService", the only method that uses it.(ÖØüÿÿÿÿÿ8†Ÿ®’Ô/
-M
-java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8†Ÿ®’Ô/
 b
 java:S1128"@Remove this unused import 'org.springframework.http.HttpMethod'.(Ê¨Ä¡øÿÿÿÿ8«®Ô/
 ‘
 java:S1128"oRemove this unused import 'org.springframework.security.config.annotation.web.configuration.EnableWebSecurity'.(ŸÜÑıÿÿÿÿ8÷¦„¬Ô/
+M
+java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8†Ÿ®’Ô/

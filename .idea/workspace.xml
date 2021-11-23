@@ -2,37 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cbbdf825-bde7-4aef-b12b-519a5fd809bf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/stewart/server/config/component/CaptchaConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/stewart/server/config/component/RedisConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/stewart/server/controller/CaptchaController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/stewart/server/service/RedisService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/stewart/server/service/impl/RedisServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yeb-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/stewart/server/config/component/CustomFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/stewart/server/config/component/CustomUrlDecisionManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/src/main/java/com/stewart/server/config/component/JwtAuthenticationTokenFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/stewart/server/config/component/JwtAuthenticationTokenFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/src/main/java/com/stewart/server/config/component/RestAuthenticationEntryPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/stewart/server/config/security/RestAuthenticationEntryPoint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/src/main/java/com/stewart/server/config/component/RestfulAccessDeniedHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/stewart/server/config/security/RestfulAccessDeniedHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/src/main/java/com/stewart/server/config/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/stewart/server/config/security/SecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yeb-server/src/main/java/com/stewart/server/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/stewart/server/controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yeb-server/src/main/java/com/stewart/server/controller/MenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/stewart/server/controller/MenuController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yeb-server/src/main/java/com/stewart/server/mapper/AdminMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/stewart/server/mapper/AdminMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yeb-server/src/main/java/com/stewart/server/mapper/MenuMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/stewart/server/mapper/MenuMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yeb-server/src/main/java/com/stewart/server/params/AdminLoginParam.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/stewart/server/params/AdminLoginParam.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/src/main/java/com/stewart/server/mapper/RoleMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/stewart/server/mapper/RoleMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/src/main/java/com/stewart/server/pojo/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/stewart/server/pojo/Admin.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yeb-server/src/main/java/com/stewart/server/pojo/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/stewart/server/pojo/Menu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yeb-server/src/main/java/com/stewart/server/service/IAdminService.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/stewart/server/service/IAdminService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yeb-server/src/main/java/com/stewart/server/service/IMenuService.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/stewart/server/service/IMenuService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yeb-server/src/main/java/com/stewart/server/service/impl/AdminServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/stewart/server/service/impl/AdminServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yeb-server/src/main/java/com/stewart/server/service/impl/MenuServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/stewart/server/service/impl/MenuServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yeb-server/src/main/resources/config/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/resources/config/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yeb-server/src/main/resources/mapper/AdminMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/resources/mapper/AdminMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yeb-server/src/main/resources/mapper/MenuMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/resources/mapper/MenuMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/src/main/resources/mapper/RoleMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/resources/mapper/RoleMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/stewart/server/controller/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/target/classes/com/stewart/server/controller/LoginController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/stewart/server/controller/MenuController.class" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/target/classes/com/stewart/server/controller/MenuController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/stewart/server/mapper/MenuMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/target/classes/com/stewart/server/mapper/MenuMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/stewart/server/params/AdminLoginParam.class" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/target/classes/com/stewart/server/params/AdminLoginParam.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/stewart/server/pojo/Menu.class" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/target/classes/com/stewart/server/pojo/Menu.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/stewart/server/service/IAdminService.class" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/target/classes/com/stewart/server/service/IAdminService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/stewart/server/service/IMenuService.class" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/target/classes/com/stewart/server/service/IMenuService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/stewart/server/service/impl/AdminServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/target/classes/com/stewart/server/service/impl/AdminServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/stewart/server/service/impl/MenuServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/target/classes/com/stewart/server/service/impl/MenuServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/config/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/target/classes/config/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/mapper/AdminMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/target/classes/mapper/AdminMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/mapper/MenuMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/target/classes/mapper/MenuMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/笔记.md" beforeDir="false" afterPath="$PROJECT_DIR$/笔记.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,7 +108,7 @@
       <recent name="D:\JavaStudy\20211120yeb\yeb-server\src\main\resources\config" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.YebApplication">
+  <component name="RunManager" selected="Spring Boot.YebApplication (1)">
     <configuration name="CodeGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.stewart.server.generator.CodeGenerator" />
       <module name="yeb-server" />
@@ -123,6 +118,19 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="YebApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="yeb-server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.stewart.server.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.stewart.server.YebApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -153,9 +161,11 @@
     <list>
       <item itemvalue="Application.CodeGenerator" />
       <item itemvalue="Spring Boot.YebApplication" />
+      <item itemvalue="Spring Boot.YebApplication (1)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.YebApplication (1)" />
         <item itemvalue="Application.CodeGenerator" />
       </list>
     </recent_temporary>
@@ -193,7 +203,8 @@
       <workItem from="1637546303212" duration="128000" />
       <workItem from="1637546728045" duration="888000" />
       <workItem from="1637547848261" duration="3889000" />
-      <workItem from="1637581965178" duration="7311000" />
+      <workItem from="1637581965178" duration="7615000" />
+      <workItem from="1637665990630" duration="5918000" />
     </task>
     <servers />
   </component>
@@ -208,10 +219,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="414" y="175" width="1174" height="690" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1637583470510" />
-    <state x="765" y="223" key="#com.intellij.ide.util.MemberChooser" timestamp="1637584980769">
+    <state x="765" y="223" key="#com.intellij.ide.util.MemberChooser" timestamp="1637670447984">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="765" y="223" key="#com.intellij.ide.util.MemberChooser/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1637584980769" />
+    <state x="765" y="223" key="#com.intellij.ide.util.MemberChooser/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1637670447984" />
     <state x="765" y="223" key="#com.intellij.ide.util.MemberChooser/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1637462302254" />
     <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1637591101279">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -222,60 +233,60 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="739" y="366" key="FileChooserDialogImpl/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1637481015241" />
-    <state width="1877" height="262" key="GridCell.Tab.0.bottom" timestamp="1637591086790">
+    <state width="1877" height="262" key="GridCell.Tab.0.bottom" timestamp="1637672173303">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="263" key="GridCell.Tab.0.bottom/-1920.0.1536.832/0.0.1920.1040@-1920.0.1536.832" timestamp="1637502322926" />
-    <state width="1877" height="262" key="GridCell.Tab.0.bottom/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1637591086790" />
+    <state width="1877" height="262" key="GridCell.Tab.0.bottom/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1637672173303" />
     <state width="1877" height="325" key="GridCell.Tab.0.bottom/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1637494940668" />
     <state width="1493" height="160" key="GridCell.Tab.0.bottom/1920.0.1536.832/0.0.1920.1040@1920.0.1536.832" timestamp="1637488868365" />
-    <state width="1877" height="262" key="GridCell.Tab.0.center" timestamp="1637591086790">
+    <state width="1877" height="262" key="GridCell.Tab.0.center" timestamp="1637672173303">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="263" key="GridCell.Tab.0.center/-1920.0.1536.832/0.0.1920.1040@-1920.0.1536.832" timestamp="1637502322925" />
-    <state width="1877" height="262" key="GridCell.Tab.0.center/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1637591086790" />
+    <state width="1877" height="262" key="GridCell.Tab.0.center/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1637672173303" />
     <state width="1877" height="325" key="GridCell.Tab.0.center/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1637494940668" />
     <state width="1493" height="160" key="GridCell.Tab.0.center/1920.0.1536.832/0.0.1920.1040@1920.0.1536.832" timestamp="1637488868365" />
-    <state width="1877" height="262" key="GridCell.Tab.0.left" timestamp="1637591086790">
+    <state width="1877" height="262" key="GridCell.Tab.0.left" timestamp="1637672173302">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="263" key="GridCell.Tab.0.left/-1920.0.1536.832/0.0.1920.1040@-1920.0.1536.832" timestamp="1637502322924" />
-    <state width="1877" height="262" key="GridCell.Tab.0.left/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1637591086790" />
+    <state width="1877" height="262" key="GridCell.Tab.0.left/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1637672173302" />
     <state width="1877" height="325" key="GridCell.Tab.0.left/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1637494940668" />
     <state width="1493" height="160" key="GridCell.Tab.0.left/1920.0.1536.832/0.0.1920.1040@1920.0.1536.832" timestamp="1637488868365" />
-    <state width="1877" height="262" key="GridCell.Tab.0.right" timestamp="1637591086790">
+    <state width="1877" height="262" key="GridCell.Tab.0.right" timestamp="1637672173303">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="263" key="GridCell.Tab.0.right/-1920.0.1536.832/0.0.1920.1040@-1920.0.1536.832" timestamp="1637502322926" />
-    <state width="1877" height="262" key="GridCell.Tab.0.right/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1637591086790" />
+    <state width="1877" height="262" key="GridCell.Tab.0.right/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1637672173303" />
     <state width="1877" height="325" key="GridCell.Tab.0.right/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1637494940668" />
     <state width="1493" height="160" key="GridCell.Tab.0.right/1920.0.1536.832/0.0.1920.1040@1920.0.1536.832" timestamp="1637488868365" />
-    <state width="1877" height="262" key="GridCell.Tab.1.bottom" timestamp="1637591086791">
+    <state width="1877" height="262" key="GridCell.Tab.1.bottom" timestamp="1637591384769">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="263" key="GridCell.Tab.1.bottom/-1920.0.1536.832/0.0.1920.1040@-1920.0.1536.832" timestamp="1637502322927" />
-    <state width="1877" height="262" key="GridCell.Tab.1.bottom/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1637591086791" />
+    <state width="1877" height="262" key="GridCell.Tab.1.bottom/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1637591384769" />
     <state width="1877" height="325" key="GridCell.Tab.1.bottom/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1637494940668" />
     <state width="1493" height="160" key="GridCell.Tab.1.bottom/1920.0.1536.832/0.0.1920.1040@1920.0.1536.832" timestamp="1637488868365" />
-    <state width="1877" height="262" key="GridCell.Tab.1.center" timestamp="1637591086790">
+    <state width="1877" height="262" key="GridCell.Tab.1.center" timestamp="1637591384768">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="263" key="GridCell.Tab.1.center/-1920.0.1536.832/0.0.1920.1040@-1920.0.1536.832" timestamp="1637502322927" />
-    <state width="1877" height="262" key="GridCell.Tab.1.center/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1637591086790" />
+    <state width="1877" height="262" key="GridCell.Tab.1.center/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1637591384768" />
     <state width="1877" height="325" key="GridCell.Tab.1.center/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1637494940668" />
     <state width="1493" height="160" key="GridCell.Tab.1.center/1920.0.1536.832/0.0.1920.1040@1920.0.1536.832" timestamp="1637488868365" />
-    <state width="1877" height="262" key="GridCell.Tab.1.left" timestamp="1637591086790">
+    <state width="1877" height="262" key="GridCell.Tab.1.left" timestamp="1637591384768">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="263" key="GridCell.Tab.1.left/-1920.0.1536.832/0.0.1920.1040@-1920.0.1536.832" timestamp="1637502322927" />
-    <state width="1877" height="262" key="GridCell.Tab.1.left/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1637591086790" />
+    <state width="1877" height="262" key="GridCell.Tab.1.left/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1637591384768" />
     <state width="1877" height="325" key="GridCell.Tab.1.left/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1637494940668" />
     <state width="1493" height="160" key="GridCell.Tab.1.left/1920.0.1536.832/0.0.1920.1040@1920.0.1536.832" timestamp="1637488868365" />
-    <state width="1877" height="262" key="GridCell.Tab.1.right" timestamp="1637591086791">
+    <state width="1877" height="262" key="GridCell.Tab.1.right" timestamp="1637591384768">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="263" key="GridCell.Tab.1.right/-1920.0.1536.832/0.0.1920.1040@-1920.0.1536.832" timestamp="1637502322927" />
-    <state width="1877" height="262" key="GridCell.Tab.1.right/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1637591086791" />
+    <state width="1877" height="262" key="GridCell.Tab.1.right/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1637591384768" />
     <state width="1877" height="325" key="GridCell.Tab.1.right/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1637494940668" />
     <state width="1493" height="160" key="GridCell.Tab.1.right/1920.0.1536.832/0.0.1920.1040@1920.0.1536.832" timestamp="1637488868365" />
     <state width="1877" height="325" key="GridCell.Tab.2.bottom" timestamp="1637554145935">
@@ -311,16 +322,5 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1637501840779" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/yeb-server/src/main/java/com/stewart/server/service/IMenuService.java</url>
-          <line>15</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

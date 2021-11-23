@@ -3,9 +3,11 @@ package com.stewart.server.service.impl;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.stewart.server.common.api.R;
 import com.stewart.server.common.utils.JwtTokenUtil;
+import com.stewart.server.mapper.RoleMapper;
 import com.stewart.server.pojo.Admin;
 import com.stewart.server.mapper.AdminMapper;
 import com.stewart.server.pojo.Menu;
+import com.stewart.server.pojo.Role;
 import com.stewart.server.service.IAdminService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -50,7 +52,8 @@ public class AdminServiceImpl extends ServiceImpl<AdminMapper, Admin> implements
     @Value("${jwt.tokenHead}")
     private String tokenHead;
 
-
+    @Autowired
+    private RoleMapper roleMapper;
 
     @Override
     public R login(String username, String password, String code, HttpServletRequest request) {
@@ -85,6 +88,7 @@ public class AdminServiceImpl extends ServiceImpl<AdminMapper, Admin> implements
         return R.success("登陆成功",tokenMap);
     }
 
+
     /**
      * 根据用户名查询用户
      * @param username
@@ -95,4 +99,13 @@ public class AdminServiceImpl extends ServiceImpl<AdminMapper, Admin> implements
         return adminMapper.selectOne(new QueryWrapper<Admin>().eq("username", username));
     }
 
+    /**
+     * 根据用户id查询角色列表
+     * @param adminId
+     * @return
+     */
+    @Override
+    public List<Role> getRoles(Integer adminId) {
+        return roleMapper.getRoles(adminId);
+    }
 }

@@ -49,6 +49,9 @@ public class LoginController {
         String username = principal.getName();
         Admin admin = adminService.getAdminByUsername(username);
         admin.setPassword(null);
+
+        //设置角色
+        admin.setRoles(adminService.getRoles(admin.getId()));
         return admin;
 
     }
@@ -58,4 +61,16 @@ public class LoginController {
     public R logout(){
         return R.success("注销成功");
     }
+
+
+    @GetMapping("/employee/basic/hello")
+    public String hello2(){
+        return "/employee/basic/hello";
+    }
+
+    @GetMapping("/employee/advanced/hello")
+    public String hello3(){
+        return "/employee/basic/hello2";
+    }
+
 }

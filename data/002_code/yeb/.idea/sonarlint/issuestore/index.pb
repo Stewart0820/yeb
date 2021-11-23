@@ -55,3 +55,5 @@ Byeb-server/src/main/java/com/xxxx/server/service/IMenuService.java,e\9\e9cb216
 pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
 z
 Jyeb-server/src/main/java/com/xxxx/server/service/impl/MenuServiceImpl.java,4\8\48fae861930657fea825996c9a726b38cddae926
+g
+7yeb-server/src/main/java/com/xxxx/server/pojo/Menu.java,a\6\a680da3b5c2348fb9359ddd7e8409e8a832142d3

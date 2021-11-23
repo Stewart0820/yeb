@@ -1,4 +1,4 @@
-package com.stewart.server.config.component;
+package com.stewart.server.config.security;
 
 import cn.hutool.json.JSONUtil;
 import com.stewart.server.common.api.R;
