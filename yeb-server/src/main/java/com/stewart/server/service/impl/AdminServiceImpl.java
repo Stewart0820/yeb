@@ -68,7 +68,6 @@ public class AdminServiceImpl extends ServiceImpl<AdminMapper, Admin> implements
             return R.error("用户名或密码不正确");
         }
 
-
         if(!userDetails.isEnabled()){
             return R.error("账号被禁用,请联系管理员");
         }

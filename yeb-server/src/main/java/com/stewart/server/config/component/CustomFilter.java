@@ -16,6 +16,7 @@ import java.util.Collection;
 import java.util.List;
 
 /**
+ * 每个接口都会走这里，中间层
  * 权限控制
  * 根据url分析请求所需要的角色
  *
@@ -30,11 +31,16 @@ public class CustomFilter implements FilterInvocationSecurityMetadataSource {
     private IMenuService menuService;
 
     AntPathMatcher antPathMatcher = new AntPathMatcher();
+
+
+    /**
+     * 白名单的访问不会走这里
+     */
     @Override
     public Collection<ConfigAttribute> getAttributes(Object object) throws IllegalArgumentException {
         //获取请求的url
         String requestUrl = ((FilterInvocation) object).getRequestUrl();
-
+        //获取所有的url
         List<Menu> menus = menuService.getMenusWithRole();
         for (Menu menu : menus) {
             // 判断请求url与菜单里面的url是否匹配
