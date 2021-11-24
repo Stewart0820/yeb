@@ -72,6 +72,7 @@ public class Admin implements Serializable ,UserDetails {
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
+        //将存在这个Admin对象中的roles取出name放在security中
         //对security设置用户的角色
         List<SimpleGrantedAuthority> authorities = roles
                 .stream()

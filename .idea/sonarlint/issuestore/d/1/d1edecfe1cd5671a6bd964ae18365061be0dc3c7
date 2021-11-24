@@ -1,11 +1,9 @@
 
-l
-java:S1128"ORemove this unused import 'org.springframework.web.bind.annotation.GetMapping'.(‡¡‰Ø8ö÷ªÔ/
-a
-java:S1128"DRemove this unused import 'io.swagger.annotations.ApiImplicitParam'.(…‡øË8ö÷ªÔ/
-b
-java:S1128"ERemove this unused import 'io.swagger.annotations.ApiImplicitParams'.(Ó‘×8ö÷ªÔ/
 ]
 java:S1128"@Remove this unused import 'io.swagger.annotations.ApiOperation'.(¡šÜ8™‘‹¬Ô/
+b
+java:S1128"ERemove this unused import 'io.swagger.annotations.ApiImplicitParams'.(Ó‘×8ö÷ªÔ/
+a
+java:S1128"DRemove this unused import 'io.swagger.annotations.ApiImplicitParam'.(…‡øË8ö÷ªÔ/
 T
 java:S1128"7Remove this unused import 'io.swagger.annotations.Api'.(·¦°Î8™‘‹¬Ô/

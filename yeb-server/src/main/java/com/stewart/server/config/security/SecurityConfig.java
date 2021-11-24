@@ -132,7 +132,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         return username -> {
             Admin admin = adminService.getAdminByUsername(username);
             if (admin != null) {
-                //设置用户的角色
+                //设置用户的角色，根据用户的id获取用户的角色
                 admin.setRoles(adminService.getRoles(admin.getId()));
                 return  admin;
             }
