@@ -16,5 +16,34 @@
     <sql id="Base_Column_List">
         id, name, parentId, depPath, enabled, isParent
     </sql>
+    <!-- 删除部门 -->
+    <select id="deleteDep" statementType="CALLABLE">
+        call deleteDep(#{id,mode=IN,jdbcType=INTEGER},#{result,mode=OUT,jdbcType=INTEGER})
+    </select>
+
+    <!--    一个递归的效果-->
+    <resultMap id="DepartmentWithChildren" type="com.stewart.server.pojo.Department" extends="BaseResultMap">
+        <collection property="children" ofType="com.stewart.server.pojo.Department" select="com.stewart.server.mapper.DepartmentMapper.getAllDepartments" column="id">
+
+        </collection>
+    </resultMap>
+    <!--    获取所有部门,通过递归的方式-->
+    <select id="getAllDepartments" resultMap="DepartmentWithChildren">
+        select
+        <include refid="Base_Column_List" />
+        from t_department
+        where parentId = #{parentId}
+    </select>
+
+
+    <!--  添加部门  -->
+    <insert id="addDep" statementType="CALLABLE">
+        call addDep(#{name,mode=IN,jdbcType=VARCHAR}
+        ,#{parentId,mode=IN,jdbcType=INTEGER}
+        ,#{enabled,mode=IN,jdbcType=BOOLEAN}
+        ,#{result,mode=OUT,jdbcType=INTEGER}
+        ,#{id,mode=OUT,jdbcType=INTEGER})
+    </insert>
+
 
 </mapper>
