@@ -1,7 +1,10 @@
 package com.stewart.server.service;
 
+import com.stewart.server.common.api.PageR;
 import com.stewart.server.pojo.Employee;
 import com.baomidou.mybatisplus.extension.service.IService;
+
+import java.time.LocalDate;
 
 /**
  * <p>
@@ -13,4 +16,13 @@ import com.baomidou.mybatisplus.extension.service.IService;
  */
 public interface IEmployeeService extends IService<Employee> {
 
+    /**
+     * 获取所有员工(分页)
+     * @param currentPage
+     * @param size
+     * @param employee
+     * @param beginDataScope
+     * @return
+     */
+    PageR getEmployeeByPage(Integer currentPage, Integer size, Employee employee, LocalDate[] beginDataScope);
 }
