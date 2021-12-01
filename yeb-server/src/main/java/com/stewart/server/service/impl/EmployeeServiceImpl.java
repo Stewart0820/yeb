@@ -11,6 +11,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
+import java.util.List;
 
 /**
  * <p>
@@ -40,5 +41,15 @@ public class EmployeeServiceImpl extends ServiceImpl<EmployeeMapper, Employee> i
         IPage<Employee> employeeByPage = employeeMapper.getEmployeeByPage(page, employee, beginDataScope);
         PageR pageR = new PageR(employeeByPage.getTotal(), employeeByPage.getRecords());
         return pageR;
+    }
+
+    /**
+     * 查询员工
+     * @param id
+     * @return
+     */
+    @Override
+    public List<Employee> getEmployee(Integer id) {
+        return employeeMapper.getEmployee(id);
     }
 }

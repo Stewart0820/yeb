@@ -25,7 +25,20 @@ spring:
         max-idle: 200
         #最小空闲连接
         min-idle: 5
-
+  # rabbitmq配置
+  rabbitmq:
+    # 用户名
+    username: guest
+    # 密码
+    password: guest
+    # 服务器地址
+    host: 192.168.10.100
+    # 端口
+    port: 5672
+    listener:
+      simple:
+        #开启手动确认
+        acknowledge-mode: manual
 mybatis-plus:
   mapper-locations: classpath*:/mapper/*Mapper.xml
   type-aliases-package: com.stewart.server.pojo

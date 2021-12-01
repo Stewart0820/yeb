@@ -5,6 +5,7 @@ import com.stewart.server.pojo.Employee;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 import java.time.LocalDate;
+import java.util.List;
 
 /**
  * <p>
@@ -25,4 +26,11 @@ public interface IEmployeeService extends IService<Employee> {
      * @return
      */
     PageR getEmployeeByPage(Integer currentPage, Integer size, Employee employee, LocalDate[] beginDataScope);
+
+    /**
+     * 查询员工
+     * @param id
+     * @return
+     */
+    List<Employee> getEmployee(Integer id);
 }
